@@ -596,8 +596,6 @@ body {
     justify-content: center !important;
     white-space: nowrap !important;
     font-size: 0.9rem !important;
-    position: relative !important;
-    left: 40% !important;
 }
 
 .logo-btn:hover {
@@ -1078,6 +1076,9 @@ body {
         text-overflow: ellipsis;
         max-width: 100%;
         display: inline-block;
+        position: static !important;
+        left: auto !important;
+        margin: 0 auto !important;
     }
     
     .whatsapp-float {
