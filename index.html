@@ -34,8 +34,8 @@
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
-                <div class="col-8 text-center">
-                    <a href="https://vipocatalog.github.io/LTD/?lang=he" target="_blank" class="btn btn-lg logo-btn animate__animated animate__fadeIn">
+                <div class="col-8 text-center d-flex justify-content-center">
+                    <a href="https://vipocatalog.github.io/LTD/?lang=he" target="_blank" class="btn btn-lg logo-btn animate__animated animate__fadeIn" style="margin: 0 auto;">
                         <span class="btn-text">VIPO CONNECT</span>
                         <i class="fas fa-arrow-left ms-2"></i>
                     </a>
@@ -51,16 +51,43 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Video Gallery -->
-        <div class="video-gallery-container" style="background: #f8f9fa; padding: 15px 0;">
-            <div class="container">
-                <div class="video-gallery">
-                    <h4 class="text-center mb-3">סרטון הדגמה</h4>
-                    <div style="width: 100%; height: 50vh; max-height: 400px; overflow: hidden; position: relative; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <video width="100%" height="100%" controls autoplay muted loop style="object-fit: contain; display: block;">
-                            <source src="assets/1.mp4" type="video/mp4">
-                            הדפדפן שלך לא תומך בנגן וידאו.
-                        </video>
+        <!-- Image Gallery -->
+        <div class="gallery-container" style="position: relative; margin: 20px 0; padding: 15px 0; background: #f8f9fa; border-radius: 8px;">
+            <!-- Main Image -->
+            <div class="main-image-container" style="width: 100%; height: 50vh; max-height: 400px; overflow: hidden; position: relative; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 10px;">
+                <img id="mainImage" src="assets/images/1.webp" alt="כורסת עיסוי VC" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                <div class="gallery-badge" style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8em;">
+                    <i class="fas fa-images"></i> 7 תמונות
+                </div>
+            </div>
+            
+            <!-- Thumbnails -->
+            <div class="thumbnails-container" style="display: flex; overflow-x: auto; gap: 8px; padding: 0 10px 10px; -webkit-overflow-scrolling: touch;">
+                <div class="thumbnail" data-src="assets/images/1.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
+                    <img src="assets/images/1.webp" alt="תמונה 1" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnail" data-src="assets/images/2.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
+                    <img src="assets/images/2.webp" alt="תמונה 2" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnail" data-src="assets/images/3.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
+                    <img src="assets/images/3.webp" alt="תמונה 3" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnail" data-src="assets/images/4.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
+                    <img src="assets/images/4.webp" alt="תמונה 4" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnail" data-src="assets/images/5.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
+                    <img src="assets/images/5.webp" alt="תמונה 5" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnail" data-src="assets/images/6.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
+                    <img src="assets/images/6.webp" alt="תמונה 6" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnail" data-src="assets/images/7.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
+                    <img src="assets/images/7.webp" alt="תמונה 7" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="thumbnail video-thumbnail" data-video="videos/VID-20250730-WA0002.mp4" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease; position: relative;">
+                    <img src="assets/images/5.webp" alt="וידאו" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background: rgba(0,0,0,0.6); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-play"></i>
                     </div>
                 </div>
             </div>
@@ -80,48 +107,21 @@
                     </div>
                     <div class="discount-badge">חיסכון של ₪7,900</div>
                 </div>
-
-                <!-- Compact Gallery -->
-                <div class="gallery-container" style="position: relative; margin: 20px 0; padding: 15px 0; background: #f8f9fa; border-radius: 8px;">
-                    <!-- Main Image -->
-                    <div class="main-image-container" style="width: 100%; height: 50vh; max-height: 400px; overflow: hidden; position: relative; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 10px;">
-                        <img id="mainImage" src="assets/images/1.webp" alt="כורסת עיסוי VC" style="width: 100%; height: 100%; object-fit: contain; display: block;">
-                        <div class="gallery-badge" style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8em;">
-                            <i class="fas fa-images"></i> 7 תמונות
-                        </div>
-                    </div>
-                    
-                    <!-- Thumbnails -->
-                    <div class="thumbnails-container" style="display: flex; overflow-x: auto; gap: 8px; padding: 0 10px 10px; -webkit-overflow-scrolling: touch;">
-                        <div class="thumbnail" data-src="assets/images/1.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
-                            <img src="assets/images/1.webp" alt="תמונה 1" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="thumbnail" data-src="assets/images/2.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
-                            <img src="assets/images/2.webp" alt="תמונה 2" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="thumbnail" data-src="assets/images/3.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
-                            <img src="assets/images/3.webp" alt="תמונה 3" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="thumbnail" data-src="assets/images/4.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
-                            <img src="assets/images/4.webp" alt="תמונה 4" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="thumbnail" data-src="assets/images/5.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
-                            <img src="assets/images/5.webp" alt="תמונה 5" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="thumbnail" data-src="assets/images/6.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
-                            <img src="assets/images/6.webp" alt="תמונה 6" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="thumbnail" data-src="assets/images/7.webp" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease;">
-                            <img src="assets/images/7.webp" alt="תמונה 7" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div class="thumbnail video-thumbnail" data-video="videos/VID-20250730-WA0002.mp4" style="flex: 0 0 auto; width: 80px; height: 60px; border: 2px solid #ddd; border-radius: 6px; overflow: hidden; cursor: pointer; transition: all 0.3s ease; position: relative;">
-                            <img src="assets/images/5.webp" alt="וידאו" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
-                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background: rgba(0,0,0,0.6); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-play"></i>
-                            </div>
+                
+                <!-- Video Gallery -->
+                <div class="video-gallery-container" style="background: #f8f9fa; padding: 15px 0; margin: 20px 0; border-radius: 8px;">
+                    <div class="video-gallery">
+                        <h4 class="text-center mb-3">סרטון הדגמה</h4>
+                        <div style="width: 100%; height: 50vh; max-height: 400px; overflow: hidden; position: relative; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <video width="100%" height="100%" controls autoplay muted loop style="object-fit: contain; display: block;">
+                                <source src="assets/1.mp4" type="video/mp4">
+                                הדפדפן שלך לא תומך בנגן וידאו.
+                            </video>
                         </div>
                     </div>
                 </div>
+
+                <!-- Video Gallery Moved Below Price -->
                 <a href="https://chat.whatsapp.com/C5C5uo6lFXCEVGjbj4WOh1" target="_blank" class="btn btn-lg join-group-btn">
                     <span class="btn-text">לרכישה במחיר מפעל</span>
                     <i class="fas fa-arrow-left ms-2"></i>
